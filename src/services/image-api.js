@@ -20,4 +20,12 @@ const fetchImages = async ({ page, query, id }) => {
   });
 };
 
+export const fetchImageId = async ({ page, query, id }) => {
+  return await axios.get('', {
+    params: {
+      id: id,
+    },
+  });
+};
+
 export default fetchImages;
